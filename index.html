@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Paralax web</title>
+</head>
+    <body>
+     
+        <header>
+            <div class="prvek1">
+            
+            
+                <h1 id="swords">Japanese Swords</h1>
+                <img id="flower" class="blossom" src="blossom.jpg">
+        
+            </div>
+        </header>
+    <div class="parallax1"></div>
+        <main>
+           <h1>Lorem ipsum</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh dolor, pretium vitae egestas vitae, cursus vitae eros.
+                Morbi eu bibendum nisi. Ut sollicitudin nec elit ut ultrices. Curabitur maximus condimentum volutpat. Maecenas aliquam facilisis leo,
+                 vitae semper nunc. Nunc a maximus massa, ut dapibus arcu. Sed vel convallis urna. 
+                Praesent pulvinar ut sapien ut ornare. Vivamus ligula nibh, faucibus eget augue at, dictum porta risus.
+                 Maecenas ut metus eu risus porta laoreet. Vivamus at molestie eros, at viverra lacus. Phasellus aliquet convallis nisi,
+                  a faucibus magna feugiat eget. Maecenas maximus mattis dui, quis cursus mi finibus a. Donec id vulputate nibh.
+                  Ut faucibus odio sit amet risus congue, eu condimentum magna rhoncus. Nullam vel neque eu velit ultrices facilisis ut nec felis.
+            </p> 
+        </main>    
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            <div class="parallax2"></div>
+
+            <div class="demi-god">
+
+        
+                <img class="bg" src="forest.jpg">
+                <img class=samurai src="SeekPng.com_warrior-png_2183527.png">
+                    <div class="content">
+                    <h1> Spirit of the forest</h1>
+                    <p><b>Lorem ipsum dolor sit amet, 
+                      consectetur adipiscing elit.
+                         Quisque nibh dolor. 
+                    </b>
+                    </p>
+
+                </div>
+            </div>
+     
+
+
+
+
+            <div class="parallax3"></div>
+        <footer>
+            <h1>Thanks</h1>
+            <p>Thanks for visiting this amazing 
+                website about japanese swords.</p>
+        </footer>
+     
+        <script type="text/javascript">
+            document.addEventListener("mousemove", function(e){
+            const bg = document.querySelector('.bg');
+            const samurai = document.querySelector('.samurai');
+            const content = document.querySelector('.content');
+
+            bg.style.width = 100 + e.pageX/100 + '%';
+            bg.style.height = 100 + e.pageX/100 + '%';
+            
+            samurai.style.right = 100 + e.pageX/2 + 'px';
+            content.style.left = 100 + e.pageX/2.5 + 'px';
+        })
+            
+        
+
+        </script>
+  
+        
+    </body>
+</html>
