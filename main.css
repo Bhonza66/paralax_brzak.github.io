@@ -51,6 +51,59 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.parallax4 {
+  
+  background-image: url("smoke.jpg");
+  width: 100%;
+  background-color: darkslategray;
+  height: 100%;
+
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax5 {
+  
+  background-image: url("bridge.jpg");
+  width: 100%;
+  background-color: darkslategray;
+  height: 100%;
+
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax6 {
+  
+  background-image: url("tower.jpg");
+  width: 100%;
+  background-color: darkslategray;
+  height: 100%;
+
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax7 {
+  
+  background-image: url("kimono.jpg");
+  width: 100%;
+  background-color: darkslategray;
+  height: 100%;
+
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .prvek1{
   height: 150px;
   background-color: darkslategray;
@@ -130,3 +183,57 @@ h1{
  padding-bottom: 0px;
  padding-top: 0px;
 }
+
+#first-image{
+  border: 2px solid black;
+  outline-style: solid;
+  outline-color: black;
+  border-radius: 5px;
+  grid-area:vor;
+  max-width: 70%;
+}
+#second-image{
+  border: 2px solid black;
+  outline-style: solid;
+  outline-color: black;
+  border-radius: 5px;
+  grid-area:bor;
+  max-width: 70%;
+}
+#third-image{
+  border: 2px solid black;
+  outline-style: solid;
+  outline-color: black;
+  border-radius: 5px;
+  grid-area:tor;
+  max-width: 70%;
+}
+#fourth-image{
+  border: 2px solid black;
+  outline-style: solid;
+  outline-color: black;
+  border-radius: 5px;
+  grid-area:hor;
+  max-width: 70%;
+}
+
+.grid-pocket{
+  display:grid;
+grid-template-areas:
+"tor hor"
+"bor vor"
+;
+grid-gap: 10px;
+
+  ;
+margin-right:25%;
+margin-left:35%;
+margin-top: 20px;
+margin-bottom: 20px;
+
+}
+const config = {
+  type: 'line',
+  data: data,
+  options: {}
+};
