@@ -108,19 +108,41 @@
 	        </script>
 
             <div class="parallax6"></div>
-            <div class="grid-pocket">
-                <img id="first-image" class="img-thumbnail" data-image-opened="joshua.jpg" src="joshua.jpg" alt="" > <!--nefunguje-->
-                <img id="second-image" class="img-thumbnail" data-image-opened="joshua.jpg" src="joshua.jpg" alt="" >
-                <img id="third-image" class="img-thumbnail" data-image-opened="joshua.jpg" src="joshua.jpg" alt="" >
-                <img id="fourth-image" class="img-thumbnail" data-image-opened="joshua.jpg" src="joshua.jpg" alt="" >
-            </div>   
+            <div class="row">
+                <div class="column">
+                  <img src="ninja1.jpg" alt="Nature" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="ninja2.jpg" alt="Snow" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="ninja3.jpg" alt="Mountains" onclick="myFunction(this);">
+                </div>
+              </div>
+              
+              <!-- The expanding image container -->
+              <div class="container">
+                <!-- Close the image -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+              
+                <!-- Expanded image -->
+                <img id="expandedImg" style="width:100%">
+              
+                <!-- Image text -->
+                <div id="imgtext"></div>
+              </div>  
                 
             <div class="parallax7"></div>
-
-            <div>
+            <main>
+                <h1>Graph of quality of our products</h1>
+            </main>
+            <div class="container-graf">
+            <div class="bg_white">
                 <canvas id="myChart"></canvas>
               </div>
+            </div>
             <div class="parallax3"></div>
+            </div>
             
             
             <footer>
@@ -145,6 +167,7 @@
         
 
         </script>
+        
         <script>
             const labels = [
             '1990',
@@ -158,9 +181,9 @@
             labels: labels,
             datasets: [{
               label: 'Quuality of our products',
-              backgroundColor: 'rgb(255, 99, 132)',
-              borderColor: 'rgb(255, 99, 132)',
-              data: [0, 10, 5, 2, 20, 30, 45],
+              backgroundColor: 'rgb(0, 0, 0)',
+              borderColor: 'rgb(255, 30, 60)',
+              data: [0, 10, 5, 6, 20, 30, 45],
             }]
           };
           const config = {
@@ -177,6 +200,16 @@
               config
             );
           </script>
+          <script>
+            function myFunction(imgs) {
+              var expandImg = document.getElementById("expandedImg");
+              var imgText = document.getElementById("imgtext");
+              expandImg.src = imgs.src;
+              imgText.innerHTML = imgs.alt;
+              expandImg.parentElement.style.display = "block";
+            }
+            </script>
+          
         
     </body>
 </html>

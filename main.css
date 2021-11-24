@@ -136,7 +136,7 @@ p {
 .blossom{
   width:100px;
   height: 100px;
-  margin-right:2300px;
+  margin-right:3500px;
   padding-top:40px;
   padding-bottom:30px;
 
@@ -232,8 +232,79 @@ margin-top: 20px;
 margin-bottom: 20px;
 
 }
-const config = {
-  type: 'line',
-  data: data,
-  options: {}
-};
+.bg_white{
+background-color: white;
+display:flex;
+justify-content:center;
+align-content: center;
+
+
+}
+.container-graf{
+max-width: 1000px;
+max-height: 1000px;
+padding-left: 1385px;
+padding-bottom: 100px;
+
+
+
+}
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+  
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+.column > img{
+max-width: 50em ;
+  max-height: 40em;
+  border-style: solid;
+  border-width: 5px;
+  border-color: darkgrey;
+  border-radius:15px ;
+
+}
+.row{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 150px;
+}
