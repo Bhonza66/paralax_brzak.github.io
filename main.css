@@ -136,7 +136,7 @@ p {
 .blossom{
   width:100px;
   height: 100px;
-  margin-right:3500px;
+  margin-right:2500px;
   padding-top:40px;
   padding-bottom:30px;
 
@@ -243,7 +243,7 @@ align-content: center;
 .container-graf{
 max-width: 1000px;
 max-height: 1000px;
-padding-left: 1385px;
+padding-left: 780px;
 padding-bottom: 100px;
 
 
@@ -295,7 +295,7 @@ padding-bottom: 100px;
   cursor: pointer;
 }
 .column > img{
-max-width: 50em ;
+max-width: 30em ;
   max-height: 40em;
   border-style: solid;
   border-width: 5px;
